@@ -1,0 +1,1901 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+#Firstpage{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+#Firstpage>img{
+    width:100%;
+}
+#Firstpage header{
+    width:90%;
+    height:140px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top:0px;
+}
+ #Firstpage header>h2{
+    width:40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:32px;
+}
+#Firstpage header>h2>span{
+    color:lightseagreen;
+    font-size:32px;
+}
+#Firstpage header ul{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+}
+#Firstpage header ul>li{
+    list-style-type: none;
+    font-size:18px;
+}
+#Firstpage header ul>li:first-child{
+    color:lightseagreen;
+}
+#Firstpage header ul>li:hover{
+    color:lightseagreen;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#Firstpage main{
+    width:90%;
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position:absolute;
+}
+#Firstpage main .info>p:first-child{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    letter-spacing:5px;
+    line-height: 2;
+    color:black;
+}
+#Firstpage main .info>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:32px;
+    line-height: 1.5;
+    letter-spacing:5px;
+}
+#Firstpage main .info>h1>span{
+    color:lightseagreen;
+}
+#Firstpage main .info>p:last-child{
+    font-style:italic;
+    color:gray;
+    letter-spacing:1px;
+}
+#Firstpage main>.btn{
+    margin-top:22px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn .buttonone{
+    width:130px;
+    height:50px;
+    background-color: #00c9b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #00c9b1;
+}
+.btn .buttonone>a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in;
+    color:white;
+    z-index:1;
+}
+.btn .buttonone::after{
+    content:"";
+    width:130px;
+    height:50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0px;
+    left:-140px;
+}
+.btn .buttonone:hover.buttonone>a{
+    color:#00c9b1;
+    
+}
+.btn .buttonone:hover.buttonone::after{
+    top:0px;
+    left:0px;
+    transition: all 0.4s ease-in;
+    
+}
+.btn .buttontwo{
+    width:130px;
+    height:50px;
+    background-color: #00c9b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin-left:18px;
+    overflow:hidden;
+    border:1px solid #00c9b1;
+}
+.btn .buttontwo>a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in;
+    color:white;
+    z-index:1;
+}
+.btn .buttontwo::after{
+    content:"";
+    width:130px;
+    height:50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:-140px;
+    left:0px;
+}
+.btn .buttontwo:hover.buttontwo>a{
+    color:#00c9b1;
+    
+}
+.btn .buttontwo:hover.buttontwo::after{
+    top:0px;
+    left:0px;
+    transition: all 0.4s ease-in;
+}
+
+
+#Firstpage footer{
+    position: absolute;
+    bottom:43px;
+}
+#Firstpage footer>.square{
+    width:30px;
+    height:60px;
+    border:2px solid lightseagreen;
+    border-radius:15px;
+   
+}
+#Firstpage footer>.square>.circle{
+    width:10px;
+    height:10px;
+    border:2px solid lightseagreen;
+    background-color:lightseagreen;
+    border-radius:50%;
+    margin-left:7px;
+    animation-name:circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes circle{
+    0% {transform:translate(0px,40px)}
+    50% {transform:translate(0px,0px)}
+    100% {transform:translate(0px,40px)}
+}
+#Secondpage{
+    width:100%;
+    margin-top:60px;
+}
+#Secondpage header{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Secondpage header>h1{
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#Secondpage header p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    width:600px;
+    text-align: center;
+    line-height: 1.5;
+}
+#Secondpage header>span{
+    margin-top:16px;
+    width:100px;
+    border-bottom:2px solid lightseagreen;
+    color:lightseagreen;
+    position: relative;
+}
+#Secondpage header>span>i{
+    transform: rotate(45deg);
+    font-size: 15px;
+    position: absolute;
+    top:-7px;
+    left:45px;
+}
+#Secondpage main{
+    width:80%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#Secondpage main> .imgside{
+    width:420px;
+    height:240px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-right:12px;
+    padding:20px 45px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    position:relative;
+    margin:22px 15px;
+    transition: all 0.3s;
+}
+#Secondpage main> .imgside>div{
+    position:absolute;
+    top:-25px;
+    left:172px;
+    width:50px;
+    height:50px;
+    font-size:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color:black;
+}
+#Secondpage main> .imgside>h2{
+    font-size:22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+#Secondpage main> .imgside>p{
+    font-size:17px;
+    width:300px;
+    text-align: center;
+    
+}
+#Secondpage main> .imgside:hover{
+    box-shadow: 0px 5px 20px rgb(170, 170, 170);
+    transition: .5s ease;
+}
+#Secondpage main> .imgside:hover div{
+    background-color:#00c9b1;
+    transition: all 0.5s;
+
+}
+#Thirdpage{
+    width:100%; 
+    height:500px;
+    display:flex;
+    background-color: #f6f6f6;
+    
+}
+#Thirdpage .about{
+    width:41%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Thirdpage .about .title h2{
+    font-size:22px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+#Thirdpage .about .title p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    color:#626262;
+    
+}
+#Thirdpage .about .title p>span{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color:#626262;
+    font-weight:bold;
+}
+#Thirdpage .about .icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:20px;
+ 
+}
+#Thirdpage .about .icons> .iconsone{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+#Thirdpage .about .icons> .iconsone>i{
+    width:43px;
+    height:43px;
+    background-color:#00c9b1;
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:22px;
+    border-radius: 3px;
+}
+#Thirdpage .about .icons> .iconsone>p{
+    font-size:18px;
+    padding:12px;
+    color:#626262;
+    letter-spacing: 1px;
+}
+#Thirdpage .about .singleicons{
+    margin-top:18px;
+    display:flex;
+    transition: all 0.5s ease-in;
+
+}
+#Thirdpage .about .singleicons>i{
+    width:45px;
+    height:40px;
+    background-color:white;
+    color:black;
+    font-size:18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:12px;
+    border:2px solid black;
+    transition:all 0.4s ease-in 0.4s;
+}
+#Thirdpage .about .singleicons>i:hover{
+    background-color:#00c9b1;
+    border:none;
+    transition: all 0.6s;
+    color:white;
+}
+.btn1 {
+    margin-top:15px;
+}
+.btn1 .button2{
+    width:130px;
+    height:45px;
+    background-color:#00c9b1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border:1px solid #00c9b1;
+    color:white;
+    overflow:hidden;
+}
+.btn1 .button2>a{
+    z-index:1;
+    letter-spacing: 1;
+    transition: all 0.5s ease-in;
+    text-decoration: none;
+    color:white;
+}
+.btn1 .button2::after{
+    content:"";
+    width:130px;
+    height:45px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0px;
+    left:-140px;
+}
+.btn1 .button2:hover.button2::after{
+    left:0px;
+    top:0px;
+    transition: all 0.5s ease-in;
+}
+.btn1 .button2:hover.button2>a{
+    color:#00c9b1;
+}
+
+#Thirdpage .work{
+    width:41%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#Thirdpage .work .ttl{
+    margin-bottom:22px;
+}
+#Thirdpage .work .ttl>h2{
+    font-size:22px;
+    color:#2e2e2e;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:2;
+}
+#Thirdpage .work .ttl>p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    color: #626262;
+}
+#Thirdpage .work .one{
+    display: flex;
+    flex-direction: column;
+    margin-top:15px;
+}
+.one>span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    letter-spacing: 1px;
+}
+.prog .brand{
+    width:550px;
+    height:16px;
+    background-color:#a7a3a38a;
+}
+.prog .brand>section{
+    width:500px;
+    height:16px;
+    background-color: #00c9b1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 25px;
+}
+.prog .brand>section>p{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:10px;
+    color:white;
+}
+.prog .brand1{
+    width:550px;
+    height:16px;
+    background-color:#a7a3a38a;
+}
+.prog .brand1>section{
+    width:530px;
+    height:16px;
+    background-color: #00c9b1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 25px;
+}
+.prog .brand1>section>p{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:10px;
+    color:white;
+}
+.prog .brand2{
+    width:550px;
+    height:16px;
+    background-color:#a7a3a38a;
+}
+.prog .brand2>section{
+    width:480px;
+    height:16px;
+    background-color: #00c9b1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 25px;
+}
+.prog .brand2>section>p{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:10px;
+    color:white;
+}
+.prog .brand3{
+    width:550px;
+    height:16px;
+    background-color:#a7a3a38a;
+}
+.prog .brand3>section{
+    width:440px;
+    height:16px;
+    background-color: #00c9b1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 25px;
+}
+.prog .brand3>section>p{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:10px;
+    color:white;
+}
+#Fouthpage{
+    width:100%;
+    margin-top:60px;
+}
+#Fouthpage header{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Fouthpage header>h1{
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#Fouthpage header p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    width:600px;
+    text-align: center;
+    line-height: 1.5;
+}
+#Fouthpage header>span{
+    margin-top:16px;
+    width:100px;
+    border-bottom:2px solid lightseagreen;
+    color:lightseagreen;
+    position: relative;
+}
+#Fouthpage header>span>i{
+    transform: rotate(45deg);
+    font-size: 15px;
+    position: absolute;
+    top:-7px;
+    left:45px;
+}
+#Fouthpage main{
+    width:95%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#Fouthpage main> .imgside{
+    width:390px;
+    height:240px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    margin-right:12px;
+    padding:20px 45px;
+    margin:22px 15px;
+    transition: all 0.3s;
+}
+#Fouthpage main> .imgside>div{
+    width:50px;
+    height:50px;
+    font-size:35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#00c9b1;
+   
+}
+#Fouthpage main> .imgside>h2{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    color:#2e2e2e;
+}
+#Fouthpage main> .imgside>p{
+    font-size:17px;
+    width:300px;
+    text-align: center;
+    color:#626262;
+}
+#Fouthpage .imgside:hover div>i{
+    transform:translate(0px,-10px);
+    transition: all 0.5s ease-in-out;
+}
+#Fouthpage .imgside:hover{
+    transform:translate(0px,-10px);
+    transition: all 0.5s ease-in-out;
+}
+#Fifthpage{
+    width:100%;
+    margin-top:60px;
+}
+#Fifthpage header{
+    width:100%;
+    height: 210px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#Fifthpage header>h1{
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#Fifthpage header p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    width:600px;
+    text-align: center;
+    line-height: 1.5;
+}
+#Fifthpage header>span{
+    margin-top:16px;
+    width:100px;
+    border-bottom:2px solid lightseagreen;
+    color:lightseagreen;
+    position: relative;
+}
+#Fifthpage header>span>i{
+    transform: rotate(45deg);
+    font-size: 15px;
+    position: absolute;
+    top:-7px;
+    left:45px;
+}
+.buttns{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:42px;
+}
+#Fifthpage .buttns .bttnones{
+    background-color:#00c9b1;
+    width:100px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:2px;
+    z-index:0;
+  
+}
+#Fifthpage .buttns{
+    position: relative;
+
+}
+#Fifthpage .buttns .bttn1>span{
+    width:15px;
+    height:15px;
+    background-color:#00c9b1;
+    transform: rotate(45deg);
+    position: absolute;
+    left:382px;
+    z-index:1;
+    top:29px;
+}
+.buttns .bttnones>a{
+    color:white;
+    text-decoration: none;
+}
+.bttn1{
+    width:100px;
+    height:40px;
+    overflow:hidden;
+    margin-right:12px;
+    
+}
+.bttnone{
+    width:100px;
+    height:40px;
+    background-color:#ddd;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:11px;
+    border-radius:2px;
+    position:relative;
+    letter-spacing: 1px;
+}
+.bttnone::after{
+    content:"";
+    position:absolute;
+    top:-40px;
+    left:0px;
+    width:50px;
+    height:40px;
+    background-color:#00c9b1;
+}
+.bttnone::before{
+    content:"";
+    position:absolute;
+    top:40px;
+    left:50px;
+    width:50px;
+    height:40px;
+    background-color:#00c9b1;
+}
+
+.bttnone:hover.bttnone::after{
+    top:0px;
+    left:0px;
+    transition: all 0.5s;
+}
+.bttnone:hover.bttnone::before{
+    top:0px;
+    left:50px;
+    transition: all 0.5s;
+}
+.bttnone>a{
+    z-index:1;
+    text-decoration: none;
+    color:black;
+}
+.bttnone:hover.bttnone>a{
+    color:white;
+}
+#Fifthpage{
+    background-color:#f6f6f6;
+}
+#Fifthpage main{
+    width:90%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Fifthpage main .allimg{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Fifthpage main .allimg .imgo{
+    width:390px;
+    height:260px;
+    position:relative;
+    overflow: hidden;
+}
+#Fifthpage main .allimg .imgo div:first-child{
+    width: 100%;
+    height: 100%;
+}
+#Fifthpage main .allimg .imgo img{
+    width:100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+#Fifthpage main .allimg .imgo .opacty{
+    width:350px;
+    height:220px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    background-color:rgba(0,201,177,.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.7,0.7);
+}
+#Fifthpage main .allimg .imgo .opacty>i{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color: white;
+    font-size:20px;
+    color:#00c9b1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#Fifthpage main .allimg .imgo .opacty>i:hover{
+    transform: translate(0px,-10px);
+    transition: all 0.4s ease 0.2s;
+}
+#Fifthpage main .allimg .imgo .opacty>h3{
+    color:white;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height:1.2;
+}
+#Fifthpage main .allimg .imgo .opacty>p{
+    color:white;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.allimg .imgo:hover .opacty{
+    opacity:1!important;
+    cursor: pointer; 
+    transform: scale(1,1)!important;
+}
+.allimg .imgo:hover img{
+    transform: scale(1.1,1.1)!important;
+}
+#Fifthpage main .buttonsimg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.buttons{
+    width:120px;
+    height:45px;
+    position:relative;
+    background-color: #00c9b1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:22px;
+}
+.buttons::after{
+    content:"";
+    width:120px;
+    height:45px;
+    position: absolute;
+    top:0px;
+    left:-120px;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons>a{
+    text-decoration: none;
+    color:white;
+    z-index:1;
+}
+.buttons:hover.buttons::after{
+    top:0px;
+    left:0px;
+    transition: all 0.5s ease-in;
+}
+.buttons:hover.buttons>a{
+    color:#00c9b1;
+    border:1px solid #00c9b1;
+    width:120px;
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#Fifthpage footer{
+    width:100%;
+    height:250px;
+    display:flex;
+    justify-content: space-around;
+    margin-top:62px;
+    
+}
+#Fifthpage footer>.foot{
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#Fifthpage footer>.foot .once{
+    width:250px;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(255,255,255,.7);
+    
+}
+
+#Fifthpage footer .foot .once>img{
+    width:270px;
+    height:170px;
+    position:relative;
+    
+}
+#Fifthpage footer>.foot .once>section{
+    width:250px;
+    height:150px;
+    background-color: white;
+    position: absolute;
+    opacity: 0.7;
+    
+}
+
+#Fifthpage footer>.foot .once>section>i{
+    color:#00c9b1;
+    font-size:35px;
+    line-height: 1.5;
+}
+#Fifthpage footer>.foot .once>section>h2{
+    color:black;
+    font-size:40px;
+    line-height: 1.5;
+}
+#Fifthpage footer>.foot .once>section>p{
+    color:black;
+    font-size:18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+#Sixpage{
+    width:100%;
+    margin-top:60px;
+}
+#Sixpage header{
+    width:100%;
+    height: 210px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#Sixpage header>h1{
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#Sixpage header p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    width:600px;
+    text-align: center;
+    line-height: 1.5;
+}
+#Sixpage header>span{
+    margin-top:16px;
+    width:100px;
+    border-bottom:2px solid lightseagreen;
+    color:lightseagreen;
+    position: relative;
+}
+#Sixpage header>span>i{
+    transform: rotate(45deg);
+    font-size: 15px;
+    position: absolute;
+    top:-7px;
+    left:45px;
+}
+#Sixpage main{
+    width:95%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#Sixpage main .allimgsd{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#Sixpage main .allimgsd .imgicons{
+    width:270px;
+    height:290px;
+    position: relative;
+}
+#Sixpage main .allimgsd .imgicons>section>img{
+    width:100%;
+    height:100%;
+}
+.aaa{
+    overflow:hidden;
+    position:relative;
+}
+.aaa::before{
+    content:"";
+    width:150px;
+    height:300px;
+    background-color:white;
+    transform:rotate(-283deg);
+    position: absolute;
+    top:183px;
+    left:70px;
+}
+#Sixpage main .allimgsd .imgicons .icons{
+    width:0%;
+    height:0%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:#212529c4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    transition: all 0.2s ease-in;
+}
+
+#Sixpage main .allimgsd .icons>i{
+    width:40px;
+    height:40px;
+    color:white;
+    background-color: #21252954;
+    border:1px solid white;
+    font-size:20px;
+    margin-right:12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    
+}
+#Sixpage main .allimgsd .one{
+    border-bottom:2px solid #00c9b1;
+}
+#Sixpage main .allimgsd .one>h2{
+    font-size:25px;
+    letter-spacing: 1px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top:22px;
+}
+#Sixpage main .allimgsd .one>p{
+    color:#00c9b1;
+    text-align: center;
+    font-style:italic;
+    margin-bottom:12px;
+}
+#Sixpage main .allimgsd .imgicons .icons>i:hover{
+    background-color:#00c9b1;
+    transition: all 0.5s ease-in;
+    cursor:pointer;
+    border:none;
+}
+#Sixpage main .allimgsd .imgicons:hover .icons{
+    transition: all 0.4s ease-in;
+    width:270px;
+    height:290px; 
+}
+#Sixpage main .allimgsd .imgicons:hover .aaa::before{
+    transition: all 0.4s ease-in 0.2s;
+    top:270px;
+    left:90px; 
+}
+#Sevenpage{
+    width:100%;
+    height:670px;
+    margin-top:60px;
+    background-color: #f6f6f6;
+}
+#Sevenpage header{
+    width:100%;
+    height: 210px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#Sevenpage header>h1{
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#Sevenpage header p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    width:600px;
+    text-align: center;
+    line-height: 1.5;
+}
+#Sevenpage header>span{
+    margin-top:16px;
+    width:100px;
+    border-bottom:2px solid lightseagreen;
+    color:lightseagreen;
+    position: relative;
+}
+#Sevenpage header>span>i{
+    transform: rotate(45deg);
+    font-size: 15px;
+    position: absolute;
+    top:-7px;
+    left:45px;
+}
+#Sevenpage main{
+    width:80%;
+    margin:17px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#Sevenpage main> .imgside{
+    width:360px;
+    height:318px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    margin-right:12px;
+    padding:20px 45px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    margin:22px 15px;
+    transition: all 0.3s;
+    background-color: white;
+   
+}
+#Sevenpage main> .imgside>div{
+    width:40%;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    color:white;
+}
+#Sevenpage main> .imgside>div>img{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+ 
+}
+#Sevenpage main> .imgside>p{
+    font-size:17px;
+    width:300px;
+    text-align: center;
+    margin-top:11px;
+    color:#626262;
+    font-style:italic;
+    
+}
+#Sevenpage main> .imgside>h2{
+    color:#00c9b1;
+    letter-spacing: 1px;
+    font-size:18px;
+    margin-top:40px;
+}
+#Sevenpage main> .imgside>span{
+    font-style:italic;
+    color:#626262;
+    
+}
+#Sevenpage main>i{
+    font-size:30px;
+    color:#00c9b1;
+}
+#Eightpage{
+    width:100%;
+}
+#Eightpage main{
+    width:95%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#Eightpage main>img{
+    width:170px;
+    height:150px;
+}
+#Eightpage main>img:hover{
+    transform: scale(1.1,1.1);
+}
+#Ninepage{
+    width:100%;
+    margin-top:60px;
+    background-color: #f6f6f6;
+}
+#Ninepage header{
+    width:100%;
+    height: 210px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#Ninepage header>h1{
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#Ninepage header p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    width:600px;
+    text-align: center;
+    line-height: 1.5;
+}
+#Ninepage header>span{
+    margin-top:16px;
+    width:100px;
+    border-bottom:2px solid lightseagreen;
+    color:lightseagreen;
+    position: relative;
+}
+#Ninepage header>span>i{
+    transform: rotate(45deg);
+    font-size: 15px;
+    position: absolute;
+    top:-7px;
+    left:45px;
+}
+#Ninepage main{
+    width:85%;
+    height:485px;
+    margin:15px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#Ninepage main> .basic{
+    width:400px;
+    height:424px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    margin-right:12px;
+    padding:45px 45px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    margin:22px 15px;
+    transition: all 0.3s;
+    background-color: white;
+   
+}
+#Ninepage main> .classic{
+    width:400px;
+    height:424px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    margin-right:12px;
+    padding:45px 45px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    margin:22px 15px;
+    transition: all 0.3s;
+    background-color: white;
+   
+}
+#Ninepage main> .basic>p:first-child{
+    color:black;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: bold;
+    font-size:18px;
+}
+#Ninepage main> .basic>h1{
+    font-size:55px; 
+}
+#Ninepage main> .basic>p:nth-child(3){
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height:2;
+}
+#Ninepage main> .basic>section{
+    display:flex;
+    align-items: space-around;
+    margin-top:22px;
+}
+#Ninepage main> .basic>section>i{
+    color:#00c9b1;
+    font-size:17px;
+    margin-right:10px;
+}
+#Ninepage main> .basic>section>p{
+    font-size:18px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Ninepage main> .basic .button{
+    width:150px;
+    height:100px;
+    background-color:#00c9b1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    position: relative;
+    overflow:hidden;
+}
+#Ninepage main> .basic .button>a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size:18px;
+    color:white;
+    z-index:1;
+    transition: all 0.3s ease;
+}
+#Ninepage main> .basic .button::before{
+    content:"";
+    width:145px;
+    height:48px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0px;
+    left:-150px;
+    border:2px solid white;
+    
+}
+
+#Ninepage main> .basic .button:hover.button::before{
+    top:0px;
+    left:0px;
+    transition:all 0.3s ease;
+  
+}
+#Ninepage main> .basic .button:hover.button>a{
+    color:#00c9b1;
+    transition:all 0.5s ease-in;
+}
+#Ninepage main> .basic:hover{
+    background-color: #00c9b1;
+}
+#Ninepage main> .basic:hover.basic{
+    color:white;
+    transition-delay: 0,4s;
+    transition: all 0.4s;
+}
+#Ninepage main> .basic:hover.basic>p:first-child{
+    color:white;
+}
+#Ninepage main> .basic:hover.basic>section>i{
+    color:white;
+    transition-delay: 0.4s;
+}
+#Ninepage main> .basic:hover.basic>h1>span{
+    color:white;
+    transition-delay: 0.4s;
+}
+#Ninepage main> .basic:hover .button>a{
+    border:1px solid white; 
+    width:150px;
+    height:52px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#Ninepage main> .classic{
+    background-color:#00c9b1;
+}
+#Ninepage main> .classic>p:first-child{
+    color:white;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: bold;
+    font-size:18px;
+}
+#Ninepage main> .classic>h1{
+    font-size:55px; 
+    color:white;
+    
+}
+#Ninepage main> .classic>p:nth-child(3){
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height:2;
+    color:white;
+}
+#Ninepage main> .classic>section{
+    display:flex;
+    align-items: space-around;
+    margin-top:22px;
+}
+#Ninepage main> .classic>section>i{
+    color:#00c9b1;
+    font-size:17px;
+    margin-right:10px;
+    color:white;
+}
+#Ninepage main> .classic>section>p{
+    font-size:18px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+#Ninepage main> .classic .button{
+    width:150px;
+    height:100px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    position: relative;
+}
+#Ninepage main> .classic .button>a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size:18px;
+    color:#00c9b1;
+    z-index:1;
+}
+
+#Tenpage{
+    width:100%;
+    margin-top:45px;
+    background-color: white;
+}
+#Tenpage header{
+    width:100%;
+    height: 200px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#Tenpage header>h1{
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#Tenpage header p{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    width:600px;
+    text-align: center;
+    line-height: 1.5;
+}
+#Tenpage header>span{
+    margin-top:16px;
+    width:100px;
+    border-bottom:2px solid lightseagreen;
+    color:lightseagreen;
+    position: relative;
+}
+#Tenpage header>span>i{
+    transform: rotate(45deg);
+    font-size: 15px;
+    position: absolute;
+    top:-7px;
+    left:45px;
+}
+#Tenpage main{
+    width:88%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#Tenpage main> .blog{
+    width:420px;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding:45px 45px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    margin:22px 15px;
+    transition: all 0.3s;
+    background-color: white;
+    position:relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+#Tenpage main> .blog:hover{
+    box-shadow: 0px 5px 20px rgb(170, 170, 170);
+    transition: .5s ease;
+}
+#Tenpage main> .blog>img{
+    width:367px;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+#Tenpage main> .blog .content{
+    position:absolute;
+    top:255px;
+    left:20px;
+}
+#Tenpage main> .blog .content>h2{
+    font-size:25px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+}
+#Tenpage main> .blog .content>h2:hover{
+    color:#00c9b1;
+    transition:all 0.3s ease-in;
+}
+#Tenpage main> .blog .content .icsp{
+    display:flex;
+}
+#Tenpage main> .blog .content .icsp>section{
+    margin-right:23px;
+}
+#Tenpage main> .blog .content .icsp>section>i{
+    color:#00c9b1;
+    margin-right:5px;
+}
+#Tenpage main> .blog .content .icsp>section>span:hover{
+    color:#00c9b1;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+#Tenpage main> .blog .content>p{
+    font-size:17px;
+    margin-top:15px;
+    color:#626262;
+}
+#Tenpage main> .blog .content>div{
+    display:flex;
+    margin-top:50px;
+}
+#Tenpage main> .blog .content>div>i{
+    color:#00c9b1;
+    font-size:18px;
+}
+#Tenpage main> .blog .content>div>h5{
+    margin-left:7px;
+    color:rgba(0, 0, 0, 0.74);
+    font-size:18px;
+    
+}
+#Tenpage main> .blog .content>div>h5:hover{
+    color:#00c9b1;
+    transition:all 0.3s ease-in;
+}
+#Tenpage main> .blog .content>div>p{
+    margin-left:200px;
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Tenpage main> .blog .content>div>p:hover{
+    color:#00c9b1bd;
+    transition:all 0.2s ease-in;
+}
+#Tenpage main> .blog .content>div>p:hover span{
+   border-bottom:1px solid #00c9b1;
+   transition:all 0.2s ease-in;
+}
+#Elevenpage{
+    width:100%;
+    margin-top:100px;
+}
+#Elevenpage .alls{
+    position: relative;
+}
+#Elevenpage .alls>img{
+    width:100%;
+}
+.allcontent{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top:530px;
+    left:420px;
+}
+.allcontent>h2{
+    color:white;
+    font-size:35px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    line-height: 2.5;
+}
+.allcontent>section{
+    display:flex;
+}
+.allcontent>section>input{
+    width:350px;
+    height:45px;
+    background-color:#f6f6f6;
+    border:1px solid #ddd;
+    outline:none;
+    text-indent:17px;
+    border-radius: 2px;
+}
+.allcontent>section>input::placeholder{
+    color:blue;
+    font-size:16px;
+    text-indent:17px;
+ 
+}
+.allcontent>section>.button{
+    width:120px;
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00c9b1;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #00c9b1;
+}
+.allcontent>section>.button::after{
+    content:"";
+    width:120px;
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    position: absolute;
+    top:0px;
+    left:-120px;
+}
+.allcontent>section>.button>a{
+    z-index:1;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.allcontent>section>.button:hover.button::after{
+    top:0px;
+    left:0px;
+    transition: all 0.3s ease-in;
+}
+.allcontent>section>.button:hover.button>a{
+    color:#00c9b1;
+}
+.allcontent .icons{
+    display: flex;
+    justify-content: center;
+    margin-top:25px;
+   
+}
+.allcontent .icons>i{
+    font-size:20px;
+    color:white;
+    margin-right:12px;
+    width:45px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2e2e2e;
+    border:2px solid white;
+}
+.allcontent .icons>i:hover{
+    border:none;
+    background-color: #00c9b1;
+    transition: all 0.3s ease;
+}
+#Twelvepage{
+    width:100%;
+    padding:25px;
+    background-color: white;
+    border-bottom:2px solid #e0dfdf;
+}
+#Twelvepage main{
+    width:88%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#Twelvepage main .endleft{
+    width:35%;
+    height:380px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Twelvepage main .endleft>h2{
+    letter-spacing: 1px;
+    color:#2e2e2e;
+    font-family: 'Times New Roman', Times, serif
+}
+#Twelvepage main .endleft>section>i{
+    color:#00c9b1;
+    font-size:22px;
+    line-height: 1.5;
+}
+#Twelvepage main .endleft>section>h3{
+    color:#2e2e2e;
+    font-size:18px;
+    letter-spacing: 1px;
+}
+#Twelvepage main .endleft>section>p{
+    color:#626262;
+    font-size:17.5px;
+}
+#Twelvepage main .endleft>section{
+    width:218px;
+}
+#Twelvepage main .endleft>section>a{
+    color:#626262;
+    font-size:17px;
+}
+#Twelvepage main .endleft>section>a:hover{
+    color:#00c9b1;
+    transition: all 0.3s ease-in;
+}
+#Twelvepage main .endright{
+    width:65%;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#Twelvepage main .endright>h2{
+    letter-spacing: 1px;
+    color:#2e2e2e;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Twelvepage main .endright>section>input{
+    width:350px;
+    height:46px;
+    outline: none;
+    margin-right:10px;
+    border-radius:3px;
+    border:1px solid #ddd;
+    
+}
+#Twelvepage main .endright>section>input:focus{
+    border:1px solid #00c9b1;
+    text-indent:18px;
+    
+}
+#Twelvepage main .endright>section>input::placeholder{
+    color:#626262;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    text-indent:18px;
+}
+#Twelvepage main .endright>textarea{
+    min-height:180px;
+    width:714px;
+    border:1px solid #ddd;
+    outline:none;
+    border-radius:3px;
+    text-indent:18px;
+    padding-top:9px;
+}
+#Twelvepage main .endright>textarea:focus{
+    border:1px solid #00c9b1;
+}
+#Twelvepage main .endright>textarea::placeholder{
+    color:#626262;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    text-indent:18px;
+}
+#Twelvepage main .endright .button{
+    width:150px;
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    background-color:#00c9b1;
+    border-radius: 3px;
+    overflow:hidden;
+    border:1px solid #00c9b1;
+}
+#Twelvepage main .endright .button>a{
+    z-index:1;
+    text-decoration: none;
+    color:white;
+    font-size:15px;
+    letter-spacing: 1px;
+}
+#Twelvepage main .endright .button::after{
+    content:"";
+    width:150px;
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0px;
+    left:-160px;
+    background-color:white;
+    border-radius: 3px;
+}
+#Twelvepage main .endright .button:hover.button::after{
+    top:0px;
+    left:0px;
+    transition: all 0.4s ease-in;
+}
+#Twelvepage main .endright .button:hover.button>a{
+    color:#00c9b1;
+}
+#End footer{
+    width:88%;
+    margin:22px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#End footer>section>p{
+    font-size:16px;
+    color:#232323;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#End footer>section>p>span{
+    color:#00c9b1;
+}
+#End footer>section>nav>a{
+    text-decoration: none;
+    color:#232323;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    padding-right:15px;
+    font-weight: bold;
+}
+#End footer>section>nav>a:hover{
+    color:#00c9b1;
+    transition: all 0.4s ease-in;
+}
+#End footer .icns{
+    display:flex;
+}
+#End footer .icns>i{
+    width:35px;
+    height:35px;
+    background-color:white;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right:12px;
+    transition: all 0.4s ease-in 0.6s;
+}
+#End footer .icns>i:hover{
+    background-color: #00c9b1;
+    border:none;
+    color:white;
+    transition: all 0.4s ease-in;
+}
+#End footer .icns>div{
+    margin-left:50px;
+}
+#End footer .icns>div>i{
+    width:30px;
+    height:30px;
+    background-color:black;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 0.3s;
+    border-radius:3px;
+    font-size:20px;
+    transition: all 0.4s ease-in 0.6s;
+}
+#End footer .icns>div>i:hover{
+    background-color:#00c9b1;
+    transition: all 0.4s ease-in;
+}
